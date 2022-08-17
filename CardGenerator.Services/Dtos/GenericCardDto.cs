@@ -1,4 +1,6 @@
-﻿namespace CardGenerator.Services;
+﻿using CardGenerator.Services.Enums;
+
+namespace CardGenerator.Services.Dtos;
 
 public class GenericCardDto
 {
@@ -8,6 +10,6 @@ public class GenericCardDto
     public DateTime ExpireDate { get; set; }
     public int CodeSecurity { get; set; }
     public FunctionCardEnum FunctionCard { get; set; }
-    public HierarchyOfCard HierarchyOfCard { get; set; }
+    public HierarchyOfCardEnum HierarchyOfCardEnum { get; set; }
     public bool IsActive { get; set; }
 }

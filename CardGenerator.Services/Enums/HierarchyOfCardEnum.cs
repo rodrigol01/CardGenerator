@@ -1,4 +1,4 @@
-﻿namespace CardGenerator.Services;
+﻿namespace CardGenerator.Services.Enums;
 
 public enum HierarchyOfCardEnum
 {
