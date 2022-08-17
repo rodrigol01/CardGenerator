@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CardGenerator.Dtos;
+using CardGenerator.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CardGenerator.Controllers;
 
@@ -6,9 +8,19 @@ namespace CardGenerator.Controllers;
 [Route("[controller]")]
 public class CardGeneratorController : ControllerBase
 {
-    [HttpGet(Name = "GetAnything")]
-    public IActionResult Get()
+    private readonly ICardGeneratorService _cardGeneratorService;
+
+    public CardGeneratorController(ICardGeneratorService cardGeneratorService)
     {
-        return Ok();
+        _cardGeneratorService = cardGeneratorService;
+    }
+
+    [HttpPost("GenerateNewCard")]
+    public async Task<IActionResult> GenerateNewCard([FromBody] CardGeneratorDto cardGeneratorDto)
+    {
+        var newCard =
+            await _cardGeneratorService.GenerateNewCard(cardGeneratorDto.PersonId, cardGeneratorDto.CanGenerateCard);
+
+        return Ok(newCard);
     }
 }

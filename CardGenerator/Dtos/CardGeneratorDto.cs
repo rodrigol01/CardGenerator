@@ -1,4 +1,4 @@
-﻿namespace CardGenerator.Controllers;
+﻿namespace CardGenerator.Dtos;
 
 public class CardGeneratorDto
 {
