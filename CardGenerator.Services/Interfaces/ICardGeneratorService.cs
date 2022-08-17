@@ -4,5 +4,5 @@ namespace CardGenerator.Services.Interfaces;
 
 public interface ICardGeneratorService
 {
-    Task<GenericCardDto> GenerateNewCard(int personId, bool canGenerate);
+    Task<GenericCardDto> GenerateNewCard(int personId);
 }

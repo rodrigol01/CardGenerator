@@ -1,4 +1,5 @@
 using CardGenerator.Services;
+using CardGenerator.Services.AbstractFactoryMethod;
 using CardGenerator.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ICardGeneratorService, CardGeneratorService>();
+builder.Services.AddScoped<IGenerateCardFactory>();
 
 var app = builder.Build();
 

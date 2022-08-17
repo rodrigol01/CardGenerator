@@ -18,8 +18,10 @@ public class CardGeneratorController : ControllerBase
     [HttpPost("GenerateNewCard")]
     public async Task<IActionResult> GenerateNewCard([FromBody] CardGeneratorDto cardGeneratorDto)
     {
-        var newCard =
-            await _cardGeneratorService.GenerateNewCard(cardGeneratorDto.PersonId, cardGeneratorDto.CanGenerateCard);
+        if (!cardGeneratorDto.CanGenerateCard)
+            return NotFound(404);
+
+        var newCard = await _cardGeneratorService.GenerateNewCard(cardGeneratorDto.PersonId);
 
         return Ok(newCard);
     }
