@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGenerator", "CardGenerator\CardGenerator.csproj", "{C9F36A71-4D72-46FD-B8F9-2142BE23E780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGeneratorService", "CardGeneratorService\CardGeneratorService.csproj", "{537B2490-82F3-4C4F-8897-24CEC280B350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGeneratorRepository", "CardGeneratorRepository\CardGeneratorRepository.csproj", "{A3FFC539-AA0A-47B8-9721-0876B36AFE19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9F36A71-4D72-46FD-B8F9-2142BE23E780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F36A71-4D72-46FD-B8F9-2142BE23E780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F36A71-4D72-46FD-B8F9-2142BE23E780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F36A71-4D72-46FD-B8F9-2142BE23E780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537B2490-82F3-4C4F-8897-24CEC280B350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537B2490-82F3-4C4F-8897-24CEC280B350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537B2490-82F3-4C4F-8897-24CEC280B350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537B2490-82F3-4C4F-8897-24CEC280B350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FFC539-AA0A-47B8-9721-0876B36AFE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FFC539-AA0A-47B8-9721-0876B36AFE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FFC539-AA0A-47B8-9721-0876B36AFE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FFC539-AA0A-47B8-9721-0876B36AFE19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
